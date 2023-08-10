@@ -133,7 +133,7 @@ This github provides getting started guide and other working details for Pressur
 
 
 ### Example Codes
-   Save whatever example code file you want to try as **main.py** in **Pico W** as shown in above [step 3](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main#3-how-to-move-your-script-on-pico-w), also add related lib files with default name.
+   Save whatever example code file you want to try as _**main.py**_ in **Pico W** as shown in above [step 3](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main#3-how-to-move-your-script-on-pico-w), also add related lib files with default name if required any.
    In [example](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main/examples) folder you will find demo example script
    - [Buzzer](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/Demo_Buzzer.py) : code to test onboard Buzzer
    - [Display](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/Demo_Display.py) : Display working demo code
