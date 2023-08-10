@@ -88,11 +88,11 @@ This github provides getting started guide and other working details for Pressur
   |5V | -  | Supply Positive 5V |
   |GND | - | Supply Ground |
   |3V3 | - | Supply Positive 3.3V |
-  |GP28 | 34 | General IO /  |
-  |GP27 | 32 | General IO /  |
-  |GP14 | 19 | General IO /  |
-  |GP22 | 29 | General IO / |
-  |GP21 | 27 | General IO /  |
+  |GP28 | 34 | General IO / ADC2 |
+  |GP27 | 32 | General IO / ADC1 |
+  |GP14 | 19 | General IO / SPI1 SCK / I2C1 SDA  |
+  |GP22 | 29 | General IO |
+  |GP21 | 27 | General IO / I2C0 SCL |
 
 
 
@@ -102,7 +102,7 @@ This github provides getting started guide and other working details for Pressur
    <img src="https://github.com/sbcshop/ArdiPi_Software/blob/main/images/pico_bootmode.gif">
    
    - It will mount as a Mass Storage Device called RPI-RP2.
-   - Drag and drop the MicroPython UF2 - [Firmware](https://https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/ArdiPi_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython on ArdiPi.
+   - Drag and drop the MicroPython UF2 - [Firmware](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/Firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython on ArdiPi.
 
 ### 2. Onboard LED Blink 
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
@@ -112,7 +112,7 @@ This github provides getting started guide and other working details for Pressur
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img1.jpg" />
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img2.jpg" />
       
-   - Write simple onboard blink Python code or [Download Led blink code](), then click on the green run button to make your script run on Pico W.
+   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/onboard_ledBlink.py), then click on the green run button to make your script run on Pico W.
      
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img3.jpg" />
      
@@ -123,7 +123,7 @@ This github provides getting started guide and other working details for Pressur
      
       <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
    
-      In similar way you can add various python code files to Pico. Also you can try out sample codes given here in [examples folder](). 
+      In similar way you can add various python code files to Pico. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main/examples). 
    
    - But in case if you want to move multiple files at one go, example suppose you are interested to save library files folder into Pico W, below image demonstrate that
      
@@ -133,17 +133,18 @@ This github provides getting started guide and other working details for Pressur
 
 
 ### Example Codes
-   Save whatever example code file you want to try as **main.py** in **Pico W** as shown in above [step 3](), also add related lib files with default name.
-   In [example]() folder you will find demo example script code to test onboard components of ArdiPi like 
-   - [Buzzer]() : code to test onboard Buzzer
-   
-   
+   Save whatever example code file you want to try as **main.py** in **Pico W** as shown in above [step 3](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main#3-how-to-move-your-script-on-pico-w), also add related lib files with default name.
+   In [example](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/tree/main/examples) folder you will find demo example script
+   - [Buzzer](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/Demo_Buzzer.py) : code to test onboard Buzzer
+   - [Display](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/Demo_Display.py) : Display working demo code
+   - [Pressure Sensor](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/examples/Demo_pressure_sensor.py): Demo code to test Pressure sensor
+  
    Using this sample code as a guide, you can modify, build, and share codes!!  
    
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
+  * [Schematic](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Hardware/blob/main/Design%20Data/schematic.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Hardware)
+  * [Step File](https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Hardware/blob/main/Mechanical%20Data/STEP%20Pressure%20Sensor%20For%20pico.step)
   * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
   * [RP2040 Datasheet](https://github.com/sbcshop/HackyPi-Hardware/blob/main/Documents/rp2040-datasheet.pdf)
@@ -151,9 +152,18 @@ This github provides getting started guide and other working details for Pressur
 
 
 ## Related Products
-   
-   Shields are compatible with ArdiPi, Ardi-32 and Other Arduino Uno Compatible boards.
+* [Differential Pressure Breakout Board](https://shop.sb-components.co.uk/products/differential-pressure-sensor)
+  
+  ![Differential_Pressure_Breakout_Board](https://shop.sb-components.co.uk/cdn/shop/products/1_abd80de0-8b6f-4223-9d89-73dcb4be2c95.png?v=1606202688&width=300)  
+  
+* [BME280 Breakout Board](https://shop.sb-components.co.uk/products/bme280-breakout-temperature-pressure-humidity-sensor)
 
+  ![BME280_breakout](https://shop.sb-components.co.uk/cdn/shop/files/BME280.jpg?v=1686831477&width=300)
+
+* [Pico Air Monitoring Expansion](https://shop.sb-components.co.uk/products/pico-air-monitoring-expansion)
+
+  ![Pico Air Monitoring Expansion](https://shop.sb-components.co.uk/cdn/shop/products/1_700091eb-112a-4c8e-904a-837472c5244c.png?v=1634555055&width=300)
+  
 ## Product License
 This is ***open source*** product. Kindly check LICENSE.md file for more information.
 
