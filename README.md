@@ -39,7 +39,7 @@ This github provides getting started guide and other working details for Pressur
 
 ## Getting Started Pressure Sensor with Pico W
 ### Hardware Overview Pinout
-<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/PressureSensor.png?v=1676380029">
+<img src="https://github.com/sbcshop/Pressure_Sensor_with_PicoW_Software/blob/main/images/pinouts.png">
 
 ### Interfacing Details
 - Pico W and Pressure Sensor module interfacing
